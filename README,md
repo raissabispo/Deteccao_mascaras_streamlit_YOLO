@@ -1,0 +1,24 @@
+# Streamlit — Detecção de Máscaras com YOLOv8n
+
+Aplicação independente em Streamlit para detecção de máscaras em tempo real usando webcam e YOLOv8n.
+
+## Classes
+
+- `with_mask` — Pessoa com máscara
+- `mask_weared_incorrect` — Pessoa usando a máscara incorretamente
+- `without_mask` — Pessoa sem máscara
+
+## Estrutura
+
+```text
+streamlit_mask_detection/
+├── .streamlit/
+│   └── config.toml
+├── modelo/
+│   └── best_mask_balanceado_final.pt
+├── src/
+│   └── app.py
+├── .gitignore
+├── packages.txt
+├── requirements.txt
+└── README.md
