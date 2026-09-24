@@ -13,7 +13,9 @@ from streamlit_webrtc import webrtc_streamer
 st.set_page_config(
 
     page_title="Detecção de Máscaras",
+
     page_icon="😷",
+
     layout="wide"
 
 )
@@ -496,6 +498,24 @@ with coluna_webcam_2:
             "video": True,
 
             "audio": False
+
+        },
+
+        rtc_configuration={
+
+            "iceServers": [
+
+                {
+
+                    "urls": [
+
+                        "stun:stun.l.google.com:19302"
+
+                    ]
+
+                }
+
+            ]
 
         },
 
